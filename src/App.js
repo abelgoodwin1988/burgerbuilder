@@ -4,9 +4,11 @@ import Layout from './components/Layout/Layout';
 class App extends Component {
   render() {
     return (
-      <Layout>
-        
-      </Layout>
+      <div>
+        <Layout>
+          <p>Test</p>
+        </Layout>
+      </div>
     );
   }
 }
