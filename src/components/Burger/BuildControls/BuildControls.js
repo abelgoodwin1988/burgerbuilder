@@ -8,15 +8,15 @@ const controls = [
   { label: 'Salad', type: 'salad'},
   { label: 'Bacon', type: 'bacon'},
   { label: 'Cheese', type: 'cheese'},
-  { label: 'Meat', type: 'meat'}
+  { label: 'Meat', type: 'meat'},
 ];
 
-const buildControls = (props) => {
-  <div>
+const buildControls = (props) => (
+  <div className={classes.BuildControls}>
     {controls.map(ctrl => (
-      <buildControl key={ctrl.label} type={ctrl.type} />
+      <BuildControl key={ctrl.label} label={ctrl.label} />
     ))}
   </div>
-}
+);
 
 export default buildControls;
